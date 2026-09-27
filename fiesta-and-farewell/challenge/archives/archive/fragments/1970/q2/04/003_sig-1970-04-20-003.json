@@ -1,0 +1,9 @@
+{
+  "reportId": "SIG-1970-04-20-003",
+  "dateLogged": "1970-04-20",
+  "origin": "Coded Relay Desk",
+  "operation": "Crosswind Ledger",
+  "classification": "restricted",
+  "confidence": 0.74,
+  "summary": "Signal copy notes repeated requests for a synchronization of local fragments with a distant ledger. The wording suggests the remote copy was treated as authoritative even after transport losses. Margin note by unknown hand: if the local pages look incomplete, try the pull again after dusk."
+}

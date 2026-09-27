@@ -1,0 +1,9 @@
+{
+  "reportId": "LOG-1970-05-04-110",
+  "summary": "Intercept summary from damaged operator sheets. An operator repeated coordinates that do not appear on the printed map. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Night fog reduced torch visibility to a few paces. No further clarification was attached to the fragment.",
+  "origin": "Motor Pool Ledger Board",
+  "operation": "Operation Broken Net",
+  "classification": "restricted",
+  "dateLogged": "1970-05-04",
+  "confidence": 0.91
+}

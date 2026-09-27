@@ -1,0 +1,9 @@
+{
+  "reportId": "SIG-1970-08-09-148",
+  "summary": "Intercept summary from damaged operator sheets. An unnamed dispatcher denied the existence of any sealed reports. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Night fog reduced torch visibility to a few paces. No further clarification was attached to the fragment.",
+  "origin": "Ward C Triage Tent",
+  "operation": "Operation Iron Current",
+  "classification": "restricted",
+  "dateLogged": "1970-08-09",
+  "confidence": 0.48
+}

@@ -1,0 +1,9 @@
+{
+  "reportId": "BX-1970-08-18-123",
+  "summary": "Intercept summary from damaged operator sheets. One clipped transmission referred to a convoy that never arrived in the daylight logs. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. River level rose against the lower steps before noon. Several words were reconstructed from context and may be inaccurate.",
+  "origin": "Quartermaster Table 2",
+  "operation": "Operation Salt Road",
+  "classification": "restricted",
+  "dateLogged": "1970-08-18",
+  "confidence": 0.84
+}

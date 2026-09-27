@@ -1,0 +1,9 @@
+{
+  "reportId": "TRN-1970-06-27-211",
+  "summary": "Intercept summary from damaged operator sheets. One clipped transmission referred to a convoy that never arrived in the daylight logs. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Night fog reduced torch visibility to a few paces. No further clarification was attached to the fragment.",
+  "origin": "Motor Pool Ledger Board",
+  "operation": "Operation Quiet Delta",
+  "classification": "restricted",
+  "dateLogged": "1970-06-27",
+  "confidence": 0.65
+}

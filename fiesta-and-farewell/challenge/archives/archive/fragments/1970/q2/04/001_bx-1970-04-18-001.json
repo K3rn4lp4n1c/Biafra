@@ -1,0 +1,9 @@
+{
+  "reportId": "BX-1970-04-18-001",
+  "dateLogged": "1970-04-18",
+  "origin": "Recovered Blackbox Cache",
+  "operation": "Operation Quiet Delta",
+  "classification": "sealed",
+  "confidence": 0.81,
+  "summary": "Initial power-on notes for the recovered blackbox. Outer casing dented, latch scarred, and one interior partition inaccessible through the visible interface. A handwritten strip tucked beneath the mount reads: not deleted, only misdirected. Inventory team marked the device too valuable to force open."
+}

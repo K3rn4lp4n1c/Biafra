@@ -1,0 +1,9 @@
+{
+  "reportId": "RIV-1970-01-09-144",
+  "summary": "Intercept summary from damaged operator sheets. Several bursts of static obscure the number of crates actually moved. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Night fog reduced torch visibility to a few paces. Several words were reconstructed from context and may be inaccurate. Cross-reference marks suggest the page once belonged to a thicker bound ledger.",
+  "origin": "Coded Relay Desk",
+  "operation": "Eastern Sector",
+  "classification": "restricted",
+  "dateLogged": "1970-01-09",
+  "confidence": 0.96
+}

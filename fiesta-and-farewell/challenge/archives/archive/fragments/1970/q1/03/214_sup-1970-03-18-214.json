@@ -1,0 +1,9 @@
+{
+  "reportId": "SUP-1970-03-18-214",
+  "summary": "Intercept summary from damaged operator sheets. A voice identified as tired and male asked for the crossing to be cleared twice. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. River level rose against the lower steps before noon. Recovered copy appears to be at least one generation removed from the original.",
+  "origin": "Northern Silo Cache",
+  "operation": "Operation Last Mile",
+  "classification": "restricted",
+  "dateLogged": "1970-03-18",
+  "confidence": 0.48
+}

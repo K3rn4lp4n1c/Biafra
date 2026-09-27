@@ -1,0 +1,9 @@
+{
+  "reportId": "AIR-1970-08-14-135",
+  "summary": "Intercept summary from damaged operator sheets. An operator repeated coordinates that do not appear on the printed map. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Heavy rain erased tire grooves before dawn. The page edge appears singed but the central notation remains legible.",
+  "origin": "Roadblock Journal Chest",
+  "operation": "Operation Closed Market",
+  "classification": "restricted",
+  "dateLogged": "1970-08-14",
+  "confidence": 0.79
+}

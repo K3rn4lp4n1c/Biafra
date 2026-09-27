@@ -1,0 +1,9 @@
+{
+  "reportId": "RIV-1970-06-05-153",
+  "summary": "Intercept summary from damaged operator sheets. Several bursts of static obscure the number of crates actually moved. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Heavy rain erased tire grooves before dawn. The page edge appears singed but the central notation remains legible.",
+  "origin": "Canal Observation Box",
+  "operation": "Operation Iron Current",
+  "classification": "secret",
+  "dateLogged": "1970-06-05",
+  "confidence": 0.76
+}

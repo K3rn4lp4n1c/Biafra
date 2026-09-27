@@ -1,0 +1,9 @@
+{
+  "reportId": "OBS-1970-05-06-184",
+  "summary": "Intercept summary from damaged operator sheets. Several bursts of static obscure the number of crates actually moved. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Wind carried smoke across the landing strip for most of the afternoon. A grease stain obscures one surname near the bottom margin.",
+  "origin": "Signal Truck 4",
+  "operation": "Operation Iron Current",
+  "classification": "public",
+  "dateLogged": "1970-05-06",
+  "confidence": 0.77
+}

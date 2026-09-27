@@ -1,0 +1,9 @@
+{
+  "reportId": "SIG-1970-02-08-118",
+  "summary": "Intercept summary from damaged operator sheets. Two call signs argued over whether the drums were fuel or water. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Heavy rain erased tire grooves before dawn. Recovered copy appears to be at least one generation removed from the original.",
+  "origin": "Eastern Dock Notebook",
+  "operation": "Operation Broken Net",
+  "classification": "restricted",
+  "dateLogged": "1970-02-08",
+  "confidence": 0.74
+}

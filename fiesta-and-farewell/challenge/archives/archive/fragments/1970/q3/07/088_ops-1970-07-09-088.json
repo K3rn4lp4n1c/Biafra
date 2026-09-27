@@ -1,0 +1,9 @@
+{
+  "reportId": "OPS-1970-07-09-088",
+  "summary": "Intercept summary from damaged operator sheets. Two call signs argued over whether the drums were fuel or water. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Dust hung low enough to hide men crossing the field. Several words were reconstructed from context and may be inaccurate.",
+  "origin": "Cartographer's Tent",
+  "operation": "River Watch",
+  "classification": "public",
+  "dateLogged": "1970-07-09",
+  "confidence": 0.69
+}

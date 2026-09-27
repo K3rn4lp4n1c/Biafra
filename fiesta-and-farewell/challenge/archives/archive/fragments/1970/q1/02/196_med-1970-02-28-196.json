@@ -1,0 +1,9 @@
+{
+  "reportId": "MED-1970-02-28-196",
+  "summary": "Intercept summary from damaged operator sheets. Shortwave traffic mentioned a second ledger not listed in the manifest. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. River level rose against the lower steps before noon. Recovered copy appears to be at least one generation removed from the original.",
+  "origin": "Watchtower Gamma",
+  "operation": "Operation Quiet Delta",
+  "classification": "restricted",
+  "dateLogged": "1970-02-28",
+  "confidence": 0.56
+}

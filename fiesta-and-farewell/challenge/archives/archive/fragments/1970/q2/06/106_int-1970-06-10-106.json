@@ -1,0 +1,9 @@
+{
+  "reportId": "INT-1970-06-10-106",
+  "summary": "Intercept summary from damaged operator sheets. The final phrase sounds like an instruction to keep one compartment unopened. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Wind carried smoke across the landing strip for most of the afternoon. Several words were reconstructed from context and may be inaccurate.",
+  "origin": "Night Dispatch Bench",
+  "operation": "Operation Iron Current",
+  "classification": "restricted",
+  "dateLogged": "1970-06-10",
+  "confidence": 0.8
+}

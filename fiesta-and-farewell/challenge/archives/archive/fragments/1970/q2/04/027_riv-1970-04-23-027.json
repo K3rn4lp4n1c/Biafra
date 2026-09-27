@@ -1,0 +1,9 @@
+{
+  "reportId": "RIV-1970-04-23-027",
+  "summary": "Intercept summary from damaged operator sheets. Several bursts of static obscure the number of crates actually moved. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Heavy rain erased tire grooves before dawn. The page edge appears singed but the central notation remains legible. One notation references a compartment or packet not visible in the current copy.",
+  "origin": "Watchtower Gamma",
+  "operation": "Operation Last Mile",
+  "classification": "restricted",
+  "dateLogged": "1970-04-23",
+  "confidence": 0.85
+}

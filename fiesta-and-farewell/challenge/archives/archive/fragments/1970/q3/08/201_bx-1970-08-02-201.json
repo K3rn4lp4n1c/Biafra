@@ -1,0 +1,9 @@
+{
+  "reportId": "BX-1970-08-02-201",
+  "summary": "Intercept summary from damaged operator sheets. The final phrase sounds like an instruction to keep one compartment unopened. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Night fog reduced torch visibility to a few paces. Recovered copy appears to be at least one generation removed from the original.",
+  "origin": "Signal Hut Makurdi Relay",
+  "operation": "Crosswind Ledger",
+  "classification": "public",
+  "dateLogged": "1970-08-02",
+  "confidence": 0.93
+}

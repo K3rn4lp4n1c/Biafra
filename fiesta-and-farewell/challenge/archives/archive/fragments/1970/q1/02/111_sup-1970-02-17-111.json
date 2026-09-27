@@ -1,0 +1,9 @@
+{
+  "reportId": "SUP-1970-02-17-111",
+  "summary": "Intercept summary from damaged operator sheets. A broken reply suggests the shipment was split before reaching the checkpoint. Secondary notation says the message was repeated on a weaker set because the main battery dipped below tolerance. Heat spoiled two boxes of penicillin left under tarpaulin. Several words were reconstructed from context and may be inaccurate.",
+  "origin": "Roadblock Journal Chest",
+  "operation": "Operation Blue Kettle",
+  "classification": "sealed",
+  "dateLogged": "1970-02-17",
+  "confidence": 0.9
+}

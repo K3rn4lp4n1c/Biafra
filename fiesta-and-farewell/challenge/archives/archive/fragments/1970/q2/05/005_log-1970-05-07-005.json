@@ -1,0 +1,9 @@
+{
+  "reportId": "LOG-1970-05-07-005",
+  "dateLogged": "1970-05-07",
+  "origin": "Quartermaster Table 2",
+  "operation": "Operation Salt Road",
+  "classification": "sealed",
+  "confidence": 0.72,
+  "summary": "Ledger fragment references two inventories: the public count for transit and a sealed count for internal correction. The second tally is described only by initials and a page marker that no longer accompanies the sheet. Someone wrote in the margin that the difference between the two counts would explain the entire quarter."
+}
