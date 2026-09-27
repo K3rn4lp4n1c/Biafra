@@ -3,6 +3,7 @@
 set -eu
 
 NAME="shell-shocked"
+USER="k3rn4lpanic"
 
 docker rm -f "$NAME" >/dev/null 2>&1 || true
 docker build --no-cache --pull --tag="$NAME:latest" .
@@ -21,5 +22,5 @@ while getopts "p" opt; do
 done
 
 if [ "$PUSH" = true ]; then
-  docker push "$NAME:latest" "k3rn4lpanic/$NAME:latest"
+  docker push "$NAME:latest" "$USER/$NAME:latest"
 fi
