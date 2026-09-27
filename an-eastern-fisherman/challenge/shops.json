@@ -1,0 +1,298 @@
+[
+  {
+    "id": "shp_9dd1dc6ffc34",
+    "name": "Onitsha Relief Depot",
+    "products": [
+      {
+        "id": "prd_df7b7f42a29afb44",
+        "name": "Biafran Field Radio",
+        "vendorSku": "BFR-2824",
+        "price": 449,
+        "currency": "USD",
+        "desc": "Compact shortwave set used for encrypted field coordination",
+        "stock": 10
+      },
+      {
+        "id": "prd_12b6be7ba6697d9d",
+        "name": "Coded Dispatch Ledger",
+        "vendorSku": "CDL-5012",
+        "price": 294,
+        "currency": "USD",
+        "desc": "Bound logbook used to track routed transmissions and drop points",
+        "stock": 6
+      },
+      {
+        "id": "prd_d0ec4c881a767cb6",
+        "name": "Relief Blanket Roll",
+        "vendorSku": "RBR-2679",
+        "price": 64,
+        "currency": "USD",
+        "desc": "Emergency issue blanket bundle for displaced civilians",
+        "stock": 4
+      },
+      {
+        "id": "prd_522741abc73e0882",
+        "name": "Palmwine Crate Seal",
+        "vendorSku": "PCS-7912",
+        "price": 119,
+        "currency": "USD",
+        "desc": "Stamped resin seal used to verify trusted cargo consignments",
+        "stock": 2
+      },
+      {
+        "id": "prd_9161320a827e1679",
+        "name": "Checkpoint Pass Sleeve",
+        "vendorSku": "CPS-2535",
+        "price": 39,
+        "currency": "USD",
+        "desc": "Waxed pouch for carrying stamped travel and supply papers",
+        "stock": 9
+      },
+      {
+        "id": "prd_4b0d3620b40d105e",
+        "name": "Long-Range Optic Tube",
+        "vendorSku": "LOT-9279",
+        "price": 235,
+        "currency": "USD",
+        "desc": "Observation tube used by scouts and perimeter watchers",
+        "stock": 2
+      }
+    ],
+    "out-for-delivery": []
+  },
+  {
+    "id": "shp_5bc1b796d90b",
+    "name": "Owerri Airstrip Exchange",
+    "products": [
+      {
+        "id": "prd_d7bd9f848bc00a95",
+        "name": "Emergency Ration Tin",
+        "vendorSku": "ERT-4257",
+        "price": 64,
+        "currency": "USD",
+        "desc": "Tinned field ration labeled for priority convoy use",
+        "stock": 15
+      },
+      {
+        "id": "prd_14685102598d5216",
+        "name": "Night Landing Torch",
+        "vendorSku": "NLT-4611",
+        "price": 134,
+        "currency": "USD",
+        "desc": "Shielded runway torch used for low-visibility landing guidance",
+        "stock": 10
+      },
+      {
+        "id": "prd_4efd74e54c3eff16",
+        "name": "Volunteer Armband",
+        "vendorSku": "VAB-1106",
+        "price": 64,
+        "currency": "USD",
+        "desc": "Marked armband issued to relief workers and runners",
+        "stock": 7
+      },
+      {
+        "id": "prd_40517f834899c0e4",
+        "name": "Courier Satchel",
+        "vendorSku": "COS-7924",
+        "price": 225,
+        "currency": "USD",
+        "desc": "Reinforced satchel with hidden compartment for sealed messages",
+        "stock": 10
+      },
+      {
+        "id": "prd_cfbd092e525b229c",
+        "name": "Signal Relay Coil",
+        "vendorSku": "SRC-3547",
+        "price": 184,
+        "currency": "USD",
+        "desc": "Portable relay part used to extend line-of-sight communications",
+        "stock": 12
+      },
+      {
+        "id": "prd_78208ab72fbc95bc",
+        "name": "Medic Supply Roll",
+        "vendorSku": "MSR-2674",
+        "price": 54,
+        "currency": "USD",
+        "desc": "Wrapped field kit containing bandages, pins, and tincture slots",
+        "stock": 14
+      }
+    ],
+    "out-for-delivery": []
+  },
+  {
+    "id": "shp_f5e44145864f",
+    "name": "Enugu Signal Office",
+    "products": [
+      {
+        "id": "prd_efaa5850d99fe54b",
+        "name": "Operator Headset Frame",
+        "vendorSku": "OHF-2584",
+        "price": 44,
+        "currency": "USD",
+        "desc": "Simple wire headset used in relay rooms and hidden radio posts",
+        "stock": 13
+      },
+      {
+        "id": "prd_39855c2189313987",
+        "name": "Map Grid Overlay",
+        "vendorSku": "MGO-5333",
+        "price": 245,
+        "currency": "USD",
+        "desc": "Transparent coordinate sheet used for route and battery planning",
+        "stock": 3
+      },
+      {
+        "id": "prd_a5a2d0daae64e2ca",
+        "name": "Relay Junction Box",
+        "vendorSku": "RJB-8527",
+        "price": 199,
+        "currency": "USD",
+        "desc": "Field junction box for splicing and rerouting communications lines",
+        "stock": 5
+      },
+      {
+        "id": "prd_02a967f770b104f4",
+        "name": "Runner's Water Pouch",
+        "vendorSku": "RWP-7201",
+        "price": 54,
+        "currency": "USD",
+        "desc": "Canvas water pouch favored by couriers on long dispatch routes",
+        "stock": 11
+      },
+      {
+        "id": "prd_9ebd619821a567ea",
+        "name": "Observation Mount Clamp",
+        "vendorSku": "OMC-6925",
+        "price": 98,
+        "currency": "USD",
+        "desc": "Clamp fixture for fixing optics to improvised observation points",
+        "stock": 8
+      }
+    ],
+    "out-for-delivery": []
+  },
+  {
+    "id": "shp_18335f9dbd3e",
+    "name": "Aba Market Cellar",
+    "products": [
+      {
+        "id": "prd_6ff38fc15ad920e1",
+        "name": "Wire Relay Node",
+        "vendorSku": "WRN-5741",
+        "price": 179,
+        "currency": "USD",
+        "desc": "Improvised junction node packed for concealed transport",
+        "stock": 9
+      },
+      {
+        "id": "prd_e1cbaa027bd8d090",
+        "name": "Red Cross Satchel",
+        "vendorSku": "RCS-2654",
+        "price": 69,
+        "currency": "USD",
+        "desc": "Rugged satchel used by medics and aid volunteers",
+        "stock": 10
+      },
+      {
+        "id": "prd_8003a3211d64fba5",
+        "name": "Lookout Mount Bracket",
+        "vendorSku": "LMB-8428",
+        "price": 103,
+        "currency": "USD",
+        "desc": "Steel bracket for mounting optics in rooftop watch positions",
+        "stock": 13
+      },
+      {
+        "id": "prd_40969a847b347643",
+        "name": "Sealed Evidence Canister",
+        "vendorSku": "SEC-3664",
+        "price": 37,
+        "currency": "USD",
+        "desc": "Tamper-evident canister used for captured documents and film",
+        "stock": 13
+      },
+      {
+        "id": "prd_b0accee91565362d",
+        "name": "Ceremonial Guard Vest",
+        "vendorSku": "CGV-4432",
+        "price": 474,
+        "currency": "USD",
+        "desc": "Heavy ceremonial vest associated with senior checkpoint guards",
+        "stock": 10
+      },
+      {
+        "id": "prd_539209988549936f",
+        "name": "Encoded Broadcast Receiver",
+        "vendorSku": "EBR-2169",
+        "price": 309,
+        "currency": "USD",
+        "desc": "Receiver tuned for relay traffic and coded bulletin playback",
+        "stock": 7
+      }
+    ],
+    "out-for-delivery": []
+  },
+  {
+    "id": "shp_4ecf0d311222",
+    "name": "Umuahia Records Annex",
+    "products": [
+      {
+        "id": "prd_b73fc5e6cd170ea9",
+        "name": "Observation Harness",
+        "vendorSku": "OBH-9751",
+        "price": 103,
+        "currency": "USD",
+        "desc": "Strap rig used by rooftop spotters and perimeter scouts",
+        "stock": 9
+      },
+      {
+        "id": "prd_9eb58e6a03c8fe5c",
+        "name": "Archive Tube",
+        "vendorSku": "ART-3677",
+        "price": 42,
+        "currency": "USD",
+        "desc": "Weather-resistant tube for records, maps, and coded slips",
+        "stock": 14
+      },
+      {
+        "id": "prd_11d179dbe73cce9d",
+        "name": "Frontline Carrier Rig",
+        "vendorSku": "FCR-5422",
+        "price": 474,
+        "currency": "USD",
+        "desc": "Load-bearing rig issued to forward supply crews",
+        "stock": 9
+      },
+      {
+        "id": "prd_af3529a51a951ec2",
+        "name": "Dispatch Operator Radio",
+        "vendorSku": "DOR-6313",
+        "price": 319,
+        "currency": "USD",
+        "desc": "Compact radio chassis for relay desks and convoy escorts",
+        "stock": 3
+      },
+      {
+        "id": "prd_17e0d829196c175b",
+        "name": "Civilians Relief Bundle",
+        "vendorSku": "CRB-4752",
+        "price": 69,
+        "currency": "USD",
+        "desc": "Basic emergency pack prepared for rapid distribution",
+        "stock": 3
+      },
+      {
+        "id": "prd_66fa463821e6dce3",
+        "name": "Scout Lamp Battery",
+        "vendorSku": "SLB-6168",
+        "price": 134,
+        "currency": "USD",
+        "desc": "Rechargeable power cell used in torches and signal lamps",
+        "stock": 10
+      }
+    ],
+    "out-for-delivery": []
+  }
+]

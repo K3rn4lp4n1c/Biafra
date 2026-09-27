@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biafran Procurement Registry</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-card">
+      <p class="eyebrow">public access node</p>
+      <h1>Biafran Procurement Registry</h1>
+      <p class="lead">
+        The Biafran Procurement Registry provides controlled access to marketplace services used for
+        catalog retrieval, order routing, and delivery coordination. This page exposes a limited
+        public-facing entry point and a downloadable Linux client for approved operators.
+      </p>
+      <p class="lead">
+        Most transactional activity takes place through authenticated marketplace routes that are not
+        browsable from this page. Access behavior, delivery routing, and item handling may vary
+        depending on account permissions and the target service in use.
+      </p>
+
+      <div class="button-row">
+        <button class="primary-btn" data-filetype="linux">Download ELF Client</button>
+      </div>
+      <div id="status-box" class="status-box" aria-live="polite">Ready.</div>
+
+      <div class="meta-grid">
+        <article class="meta-card">
+          <h2>Platform Activity</h2>
+          <ul>
+            <li>Catalog retrieval and item lookup</li>
+            <li>Order routing and delivery coordination</li>
+            <li>Restricted marketplace access through authenticated clients</li>
+          </ul>
+        </article>
+
+        <article class="meta-card">
+          <h2>Expected Behavior</h2>
+          <ul>
+            <li>Some services are only available after authentication</li>
+            <li>Certain routes may return structured machine responses instead of rendered pages</li>
+            <li>Delivery actions may involve external notification or internal shop routing</li>
+          </ul>
+        </article>
+
+        <article class="meta-card">
+          <h2>Usage Restrictions</h2>
+          <ul>
+            <li>Do not modify request structure unless directed by the service owner</li>
+            <li>Do not assume all visible paths are intended for direct browser use</li>
+            <li>Do not reuse stale credentials or cached routing data across sessions</li>
+          </ul>
+        </article>
+
+        <article class="meta-card">
+          <h2>Client Access</h2>
+          <ul>
+            <li>The downloadable client is intended for Linux environments</li>
+            <li>Operators should use the client against the same host from which it was obtained</li>
+            <li>Successful access may require credentials and delivery-specific parameters</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="notice-box">
+        <h2>Notice</h2>
+        <p>
+          This page is not a complete representation of the registry. Public access is intentionally
+          limited. Operators requiring deeper marketplace functionality should use the approved client
+          and follow the response format returned by the service.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
