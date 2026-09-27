@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recon Asset Validator</title>
+    <meta name="description" content="Validate whether a file appears to be an image." />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </head>
+
+  <body>
+    <div class="shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true" data-brand-mark>RV</div>
+          <div class="wordmark">
+            <p class="eyebrow">Internal Utility</p>
+            <h1>Recon Asset Validator</h1>
+            <p class="subtitle">Validate uploaded reconnaissance files and review metadata output.</p>
+          </div>
+        </div>
+
+        <div class="header-actions"><button id="aboutBtn" type="button" class="ghost">Read Me</button></div>
+      </header>
+
+      <main class="layout">
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Upload</p>
+              <h2>Submit file for analysis</h2>
+            </div>
+            <p class="panel-note">Maximum file size: 50 MiB</p>
+          </div>
+
+          <form id="analyzeForm" class="form" autocomplete="off" novalidate>
+            <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-controls="fileInput" aria-describedby="dropzoneHelp">
+              <input id="fileInput" name="file" type="file" class="file-input" />
+
+              <div class="dropzone-copy" id="dropzoneCopy">
+                <div class="upload-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="upload-svg">
+                    <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" d="M12 16V5m0 0l-4 4m4-4l4 4M5 18v1h14v-1" />
+                  </svg>
+                </div>
+                <p class="dropzone-title">Drag and drop a file here</p>
+                <p class="dropzone-subtitle">
+                  or <span class="linklike">browse from your device</span>
+                </p>
+                <p class="dropzone-help" id="dropzoneHelp">
+                  The original filename is preserved during upload.
+                </p>
+              </div>
+
+              <div id="preview" class="preview" hidden>
+                <div class="preview-thumb-wrap">
+                  <img id="thumb" class="preview-thumb" alt="Selected file preview" />
+                  <div id="fileBadge" class="file-badge" aria-hidden="true">FILE</div>
+                </div>
+
+                <div class="preview-meta">
+                  <p id="fileName" class="preview-name">No file selected</p>
+                  <p id="fileSize" class="preview-size">0 B</p>
+                  <p id="fileType" class="preview-type">Unknown type</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button id="submitBtn" type="submit" class="primary" disabled>
+                Analyze
+              </button>
+              <button id="resetBtn" type="button" class="ghost" disabled>
+                Reset
+              </button>
+            </div>
+
+            <div id="progressWrap" class="progress-wrap" hidden aria-hidden="true">
+              <div id="progress" class="progress"></div>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Result</p>
+              <h2>Response</h2>
+            </div>
+          </div>
+
+          <div id="resultCard" class="result-card muted" aria-live="polite">
+            <div class="result-top">
+              <span id="pill" class="result-pill">Waiting</span>
+            </div>
+            <pre id="raw" class="raw">No request made yet.</pre>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <small>
+          Restricted internal utility. Use only in approved testing and operational contexts.
+        </small>
+      </footer>
+    </div>
+
+    <dialog id="about" class="modal">
+      <div class="modal-body">
+        <div class="modal-head">
+          <div>
+            <p class="eyebrow">Instructions</p>
+            <h3>How to use the validator</h3>
+          </div>
+        </div>
+
+        <div class="modal-copy">
+          <p>
+            Upload a file to determine whether the server identifies it as an image.
+          </p>
+          <p>
+            Select a file, submit it for analysis, and review the JSON response in the
+            result panel.
+          </p>
+          <p>
+          If the validator appears unstable, retry using a request name that includes the approved
+          diagnostic asset tag <code>flag</code> and report any unexpected behavior.
+          </p>
+        </div>
+
+        <form method="dialog" class="modal-actions">
+          <button type="submit" class="primary">Close</button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
