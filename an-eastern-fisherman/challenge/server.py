@@ -4,10 +4,12 @@ from flask_session import Session
 from werkzeug.utils import secure_filename
 from functools import wraps
 from pathlib import Path
+
 import os
+import json
+import py7zr
 import logging
 import secrets
-import json
 
 from helpers.compile import compile_code
 from helpers.auth import verify_credentials, gen_enc_path, enc_req, dec_req, issue_shop_token, validate_shop_token, clear_shop_token
@@ -25,6 +27,7 @@ FLAG_PRODUCT = {
     "stock": 1
 }
 ASSETS_DIR = BASE_DIR / "assets"
+if not ASSETS_DIR.is_dir(): ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 EXECUTABLE = "an-eastern-fisherman"
 
 HOST = os.environ.get("HOST", "127.0.0.1")
@@ -266,4 +269,7 @@ def download():
     return send_from_directory(ASSETS_DIR, filename, as_attachment=True)
 
 if __name__ == "__main__":
+    password = os.environ["PASSWORD"]
+    with py7zr.SevenZipFile(BASE_DIR / "assets.7z", mode='r', password=password) as archive:
+        archive.extractall(path=ASSETS_DIR)
     app.run(host=HOST, port=PORT)

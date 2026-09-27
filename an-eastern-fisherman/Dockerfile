@@ -25,7 +25,7 @@ RUN python --version \
 
 # Copy challenge files
 COPY challenge/ /home/
-COPY client.7z /home/assets/client.7z
+COPY assets.7z /home/assets.7z
 
 # Expose the application port
 EXPOSE 80

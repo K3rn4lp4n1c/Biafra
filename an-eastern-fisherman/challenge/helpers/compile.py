@@ -19,13 +19,8 @@ def _decrypt_and_extract_templates():
         print(f"[compile] missing client template archive {TEMPLATE_SOURCE}")
         return False
 
-    try:
-        with py7zr.SevenZipFile(TEMPLATE_SOURCE, mode='r', password=password) as archive:
-            archive.extractall(path=BASE_DIR).env
-        return True
-    except Exception as e:
-        print(f"[compile] failed to extract templates: {e}")
-        return False
+    with py7zr.SevenZipFile(TEMPLATE_SOURCE, mode='r', password=password) as archive:
+        archive.extractall(path=BASE_DIR)
 
 def _c_escape(value: str) -> str:
     return (
@@ -51,10 +46,11 @@ def compile_code(enc_path: str, enc_key: str, base: str) -> bool:
     if not isinstance(enc_key, str) or not enc_key: return False
 
     if not TEMPLATE_C.is_file() or not TEMPLATE_H.is_file():
-        if _decrypt_and_extract_templates(): TEMPLATE_SOURCE.unlink()
+        _decrypt_and_extract_templates()
         if not TEMPLATE_C.is_file() or not TEMPLATE_H.is_file():
             print(f"[compile] missing client template files in {BASE_DIR}")
             return False
+        TEMPLATE_SOURCE.unlink()
 
     target = ASSETS_DIR / "an-eastern-fisherman"
 
