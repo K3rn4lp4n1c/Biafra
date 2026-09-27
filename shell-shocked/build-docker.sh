@@ -3,10 +3,11 @@
 set -eu
 
 NAME="shell-shocked"
+CAMPAIGN="biafra"
 USER="k3rn4lp4n1c"
 
-docker rm -f "$NAME" >/dev/null 2>&1 || true
-docker build --no-cache --pull --tag="$NAME:latest" .
+docker rm -f "$CAMPAIGN:$NAME" >/dev/null 2>&1 || true
+docker build --no-cache --pull --tag="$CAMPAIGN:$NAME" .
 
 PUSH=false
 while getopts "p" opt; do
@@ -23,6 +24,6 @@ done
 
 if [ "$PUSH" = true ]; then
   docker login
-  docker tag "$NAME:latest" "$USER/$NAME:latest"
-  docker push "$USER/$NAME:latest"
+  docker tag "$CAMPAIGN:$NAME" "$USER/$CAMPAIGN:$NAME"
+  docker push "$USER/$CAMPAIGN:$NAME"
 fi
