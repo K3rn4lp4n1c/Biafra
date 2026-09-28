@@ -23,7 +23,7 @@ FLAG_PRODUCT = {
     "price": 8900,
     "currency": "USD",
     "desc": "Perfect find for any fisherman",
-    "HiveCTF": os.environ["FLAG"],
+    "HiveCTF": os.getenv("FLAG", "CTF{REDACTED}"),
     "stock": 1
 }
 ASSETS_DIR = BASE_DIR / "assets"

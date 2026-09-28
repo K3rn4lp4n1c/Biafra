@@ -14,7 +14,7 @@ TEMPLATE_C = BASE_DIR / "client.c"
 TEMPLATE_H = BASE_DIR / "client.h"
 
 def _decrypt_and_extract_templates():
-    password = os.environ["PASSWORD"]
+    password = os.environ["ASSETS_PASSWORD"]
     if not TEMPLATE_SOURCE.is_file():
         print(f"[compile] missing client template archive {TEMPLATE_SOURCE}")
         return False
