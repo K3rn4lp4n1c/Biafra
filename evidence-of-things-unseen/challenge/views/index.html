@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biafra Internal Exchange | Receipt Recovery Desk</title>
+    <meta
+      name="description"
+      content="Submit a restored marketplace invoice for verification."
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <script
+      defer
+      src="{{ url_for('static', filename='js/script.js') }}"
+    ></script>
+  </head>
+
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-mark">BIE</div>
+          <div>
+            <p class="eyebrow">Internal Recovery Desk</p>
+            <h1>Biafra Internal Exchange</h1>
+            <p class="subtitle">
+              Restore the marketplace invoice and submit it for verification.
+            </p>
+          </div>
+        </div>
+
+        <button id="helpBtn" class="ghost-btn" type="button">Instructions</button>
+      </header>
+
+      <main class="layout">
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Reference</p>
+              <h2>Recovered invoice scan</h2>
+            </div>
+            <span class="pill neutral">Damaged source</span>
+          </div>
+
+          <p class="panel-copy">
+            This is the invoice image that was recovered from the marketplace trail.
+            Repair it, revise it, and submit your improved version below.
+          </p>
+
+          <div class="reference-frame">
+            <img
+              src="{{ url_for('static', filename='img/source_invoice.png') }}"
+              alt="Recovered damaged marketplace invoice"
+              class="reference-image"
+            />
+          </div>
+
+          <div class="reference-note">
+            <p>
+              Accepted formats: PNG, JPG, JPEG, WEBP
+            </p>
+            <p>
+              Maximum file size: 10 MiB
+            </p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Submission</p>
+              <h2>Upload restored invoice</h2>
+            </div>
+            <span id="formState" class="pill neutral">Waiting</span>
+          </div>
+
+          <form id="uploadForm" class="upload-form" novalidate>
+            <label
+              id="dropzone"
+              class="dropzone"
+              for="fileInput"
+              tabindex="0"
+              aria-describedby="dropzoneHint"
+            >
+              <input
+                id="fileInput"
+                name="file"
+                type="file"
+                accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp"
+                class="file-input"
+              />
+
+              <div id="dropzoneCopy" class="dropzone-copy">
+                <div class="upload-icon" aria-hidden="true">⬆</div>
+                <p class="dropzone-title">Drop your edited invoice here</p>
+                <p class="dropzone-subtitle">
+                  or <span class="linklike">browse from your device</span>
+                </p>
+                <p id="dropzoneHint" class="dropzone-hint">
+                  Best results come from images that keep the original layout.
+                </p>
+              </div>
+
+              <div id="preview" class="preview" hidden>
+                <div class="preview-thumb-wrap">
+                  <img id="previewImage" class="preview-image" alt="Upload preview" />
+                </div>
+
+                <div class="preview-meta">
+                  <p id="previewName" class="preview-name">No file selected</p>
+                  <p id="previewSize" class="preview-size">0 B</p>
+                  <p id="previewType" class="preview-size">Unknown type</p>
+                </div>
+              </div>
+            </label>
+
+            <div class="action-row">
+              <button id="submitBtn" type="submit" class="primary-btn" disabled>
+                Verify Invoice
+              </button>
+              <button id="resetBtn" type="button" class="ghost-btn" disabled>
+                Reset
+              </button>
+            </div>
+
+            <div id="progressWrap" class="progress-wrap" hidden>
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <section class="panel result-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Verification</p>
+            <h2>Server response</h2>
+          </div>
+          <span id="resultPill" class="pill neutral">Idle</span>
+        </div>
+
+        <div id="resultSummary" class="result-summary muted">
+          No submission yet.
+        </div>
+
+        <div id="scoreGrid" class="score-grid" hidden>
+          <div class="score-card">
+            <span class="score-label">Template Score</span>
+            <strong id="templateScore">0.00</strong>
+          </div>
+          <div class="score-card">
+            <span class="score-label">Edit Score</span>
+            <strong id="editScore">0.00</strong>
+          </div>
+          <div class="score-card">
+            <span class="score-label">Overall</span>
+            <strong id="overallScore">0.00</strong>
+          </div>
+        </div>
+
+        <div id="flagWrap" class="flag-wrap" hidden>
+          <span class="flag-label">Flag</span>
+          <code id="flagValue" class="flag-value"></code>
+        </div>
+
+        <div class="results-columns">
+          <div>
+            <h3>Feedback</h3>
+            <ul id="feedbackList" class="feedback-list">
+              <li>Submit an invoice image to begin.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Region breakdown</h3>
+            <div id="regionTableWrap" class="region-table-wrap">
+              <table class="region-table">
+                <thead>
+                  <tr>
+                    <th>Region</th>
+                    <th>Target</th>
+                    <th>Worn</th>
+                    <th>Delta</th>
+                  </tr>
+                </thead>
+                <tbody id="regionTableBody">
+                  <tr>
+                    <td colspan="4" class="muted-cell">No region data yet.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <small>
+          BIAFRA INTERNAL EXCHANGE, recovery terminal, restricted handling.
+        </small>
+      </footer>
+    </div>
+
+    <dialog id="helpDialog" class="modal">
+      <div class="modal-card">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Instructions</p>
+            <h3>How verification works</h3>
+          </div>
+        </div>
+
+        <div class="modal-copy">
+          <p>
+            Upload a repaired invoice image that matches the expected marketplace
+            receipt format.
+          </p>
+          <p>
+            The verifier checks the overall template and also compares several key
+            fields against the target invoice.
+          </p>
+          <p>
+            Keep the document layout close to the recovered source. The right edits
+            matter more than cosmetic perfection.
+          </p>
+        </div>
+
+        <form method="dialog" class="modal-actions">
+          <button type="submit" class="primary-btn">Close</button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>
