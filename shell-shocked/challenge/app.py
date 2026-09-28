@@ -14,6 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent
 MAX_FILE_SIZE = 50 * 1024 * 1024  # 50 MiB
 EXIFTOOL_TIMEOUT_SECONDS = 10
 
+HOST = os.getenv("HOST", "127.0.0.1")
+PORT = int(os.getenv("PORT", 80))
+
 app = Flask(
     __name__,
     template_folder=str(BASE_DIR / "views"),
@@ -126,6 +129,6 @@ def metadata():
 def health(): return jsonify({"status": "ok"}), 200
 
 if __name__ == "__main__":
-    with open(BASE_DIR / "flag", "w") as f: f.write(os.environ['FLAG'])
+    with open(BASE_DIR / "flag", "w") as f: f.write(os.getenv("FLAG", "CTF{REDACTED}"))
     os.environ.pop("FLAG", None)
-    app.run(host="0.0.0.0", port=80)
+    app.run(host=HOST, port=PORT)

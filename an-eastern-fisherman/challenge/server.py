@@ -15,7 +15,7 @@ from helpers.compile import compile_code
 from helpers.auth import verify_credentials, gen_enc_path, enc_req, dec_req, issue_shop_token, validate_shop_token, clear_shop_token
 from helpers.shop import make_shops, req_product_details, put_product_out_for_delivery, deliver_product, inform_shop_of_delivery
 
-BASE_DIR = Path(os.environ.get("BASE_DIR", Path(__file__).resolve().parent))
+BASE_DIR = Path('/home')
 FLAG_PRODUCT = {
     "id": "prd_f786ee3f04cca064",
     "name": "Pflueger Bull Dog Fishing Hook",
@@ -30,8 +30,8 @@ ASSETS_DIR = BASE_DIR / "assets"
 if not ASSETS_DIR.is_dir(): ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 EXECUTABLE = "an-eastern-fisherman"
 
-HOST = os.environ.get("HOST", "127.0.0.1")
-PORT = int(os.environ.get("PORT", 8080))
+HOST = os.getenv("HOST", "127.0.0.1")
+PORT = int(os.getenv("PORT", 80))
 
 app = Flask(
     __name__,
@@ -269,7 +269,8 @@ def download():
     return send_from_directory(ASSETS_DIR, filename, as_attachment=True)
 
 if __name__ == "__main__":
-    password = os.environ["ASSETS_PASSWORD"]
+    password = os.getenv("ASSETS_PASSWORD")
+    if password is None: raise RuntimeError("ASSETS_PASSWORD environment variable is not set.")
     with py7zr.SevenZipFile(BASE_DIR / "assets.7z", mode='r', password=password) as archive:
         archive.extractall(path=ASSETS_DIR)
     app.run(host=HOST, port=PORT)

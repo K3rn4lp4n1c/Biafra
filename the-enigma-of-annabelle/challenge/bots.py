@@ -13,7 +13,7 @@ import asyncio
 HOST = os.getenv("HOST", "127.0.0.1")
 PORT = int(os.getenv("PORT", 1337))
 
-FLAG = f"I heard you were looking for me. Here is the flag: {os.environ['FLAG']}"
+FLAG = f"I heard you were looking for me. Here is the flag: {os.getenv('FLAG', 'CTF{REDACTED}')}"
 HELP = "Stop spamming the chat and look at the chat history! My juniors and I don't have a flag"
 ASSETS_DIR = Path(__file__).parent / "assets"
 ASSETS_DIR.parent.mkdir(parents=True, exist_ok=True)
@@ -39,7 +39,8 @@ def send_req(rfile: io.TextIOWrapper, wfile: io.TextIOWrapper, obj: dict) -> dic
     return json.loads(rfile.readline())
 
 def load_bot_chat(machine: EnigmaMachine, symbols: dict) -> list[dict[str, str]]:
-    password = os.environ["ASSETS_PASSWORD"]
+    password = os.getenv("ASSETS_PASSWORD")
+    if password is None: raise RuntimeError("ASSETS_PASSWORD environment variable is not set.")
     with py7zr.SevenZipFile(ASSETS_DIR / "assets.7z", mode="r", password=password) as archive:
         archive.extractall(path=BOT_CHAT_FILE.parent)
     if not BOT_CHAT_FILE.exists(): raise FileNotFoundError(f"Bot chat file not found: {BOT_CHAT_FILE}")

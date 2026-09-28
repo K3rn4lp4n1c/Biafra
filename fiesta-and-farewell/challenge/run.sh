@@ -8,11 +8,14 @@ fi
 
 if [ ! -f flag.txt ]; then
     if [ -z "${FLAG:-}" ]; then
-        echo "[run] FLAG variable is not set in container" >&2
-        exit 1
+        FLAG="CTF{REDACTED}"
     fi
 
     printf '%s\n' "$FLAG" > flag.txt
+fi
+
+if [ -z "${PORT:-}" ]; then
+    PORT=1337
 fi
 
 exec socat \
