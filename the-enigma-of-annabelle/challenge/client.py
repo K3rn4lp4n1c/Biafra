@@ -21,10 +21,10 @@ def main():
 
         while True:
             print()
-            print("1. (g)et recent messages")
-            print("2. (p)ost a message")
-            print("3. (o)ptions again")
-            print("4. (q)uit")
+            print("-> (g)et recent messages")
+            print("-> (p)ost a message")
+            print("-> (o)ptions again")
+            print("-> (q)uit")
 
             choice = input("Choose an option: ").strip().lower()
 
