@@ -269,7 +269,7 @@ def download():
     return send_from_directory(ASSETS_DIR, filename, as_attachment=True)
 
 if __name__ == "__main__":
-    password = os.environ["PASSWORD"]
+    password = os.environ["ASSETS_PASSWORD"]
     with py7zr.SevenZipFile(BASE_DIR / "assets.7z", mode='r', password=password) as archive:
         archive.extractall(path=ASSETS_DIR)
     app.run(host=HOST, port=PORT)
