@@ -1,0 +1,15 @@
+name: Compress Artifacts and Release
+
+on:
+  push:
+    tags: 'v*.*.*'
+
+jobs:
+  compress-and-release:
+    name: Compress Artifacts and Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run `compress-all.sh` in root folder
+        run: chmod +x ./compress-all.sh && ./compress-all.sh
